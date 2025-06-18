@@ -30,7 +30,7 @@ export default function App() {
   }, []);
 
   return (
-    <div style={{ padding: "2rem", fontFamily: "sans-serif" }}>
+    <div>
       <h1>Contacts list</h1>
       <ul>
         {contacts.map((contact: TContact, idx: number) => (

@@ -24,6 +24,8 @@ fn add_contact(name: String, phone: String, state: State<ContactList>) {
     contacts.push(Contact { name, phone })
 }
 
+//  TODO: edit & delete a contact
+
 fn main() {
     // entry point
     tauri::Builder::default()
