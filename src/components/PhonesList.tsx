@@ -1,3 +1,6 @@
+// types
+import { TContact } from "@/Types";
+
 export default function PhonesList({ contacts }: { contacts: TContact[] }) {
   return (
     <ul>

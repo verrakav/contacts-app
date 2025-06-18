@@ -1,16 +1,12 @@
 //  hooks
 import { useState, useEffect } from "react";
 import { invoke } from "@tauri-apps/api/core";
+// types
+import { TContact } from "./Types";
 // components
 import Sidebar from "./components/Sidebar";
 import PhonesList from "./components/PhonesList";
 import InputSection from "./components/InputSection";
-
-//  TODO: extract into types
-type TContact = {
-  name: string;
-  phone: string;
-};
 
 export default function App() {
   //  TODO: change the state | dummy data at the moment
