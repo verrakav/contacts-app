@@ -1,5 +1,8 @@
+//  hooks
 import { useState, useEffect } from "react";
 import { invoke } from "@tauri-apps/api/core";
+// components
+import { Button } from "./components/ui/button";
 
 type TContact = {
   name: string;
@@ -52,7 +55,7 @@ export default function App() {
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
       />
-      <button onClick={handleAdd}>Add</button>
+      <Button onClick={handleAdd}>Add</Button>
     </div>
   );
 }
